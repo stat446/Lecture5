@@ -67,7 +67,7 @@ Because a SRS was taken within each stratum, we can apply the estimator formulas
 \vfill
 The formulas are:
 	\begin{eqnarray*}
-	\hat{\bar{y}}_{hU} &=& \bar{y}_h = *\frac{1}{n_h}\sum_{j=1}^{n_h} y_{hj}* \\
+	\hat{\bar{y}}_{hU} &=& \hat{p}_h = \bar{y}_h = *\frac{1}{n_h}\sum_{j=1}^{n_h} y_{hj}* \\
 	\hat{t}_h &=& N_h \bar{y}_h = *\frac{N_h}{n_h} \sum_{j=1}^{n_h} y_{hj}*
 	\end{eqnarray*}
 \vfill
@@ -77,11 +77,11 @@ Compute:
 
 $\bar{y}_1 = *\frac{30}{4} = 7.5*$
 \vfill
-$\hat{t}_1 = 75$
+$\hat{t}_1 = \frac{40}{4} \times 30 = 300$
 \vfill
 $\bar{y}_2 =\frac{44}{4} = 11$
   \vfill
-$\hat{t}_2 = 110$
+$\hat{t}_2 = \frac{40}{4} \times 44 = 440$
 \vfill
 
 Because each $\hat{t}_h$ is an unbiased estimator of the stratum total $t_h$ for $i=1,2,\dots,k$ their sum will be an unbiased estimator for the population total $t$. That is $\hat{t}_{str} = \sum_h \hat{t}_h$ is an unbiased estimator of $t$.
@@ -94,7 +94,7 @@ An unbiased estimator of $\bar{y}_U$ is a weighted average of the stratum sample
 Now compute the population total and population mean
 \vfill
 
-*$\hat{t}_{str} = t_1 + t_2 = 75 + 110 = 185$*
+*$\hat{t}_{str} = t_1 + t_2 = 300 + 440 = 740$*
 \vfill
 *$\hat{\bar{y}}_{U,str} = \frac{40}{80}\bar{y}_1 + \frac{40}{80}\bar{y}_2 = 9.25$*
   \vfill
